@@ -43,7 +43,8 @@ body {
 
 .top-image {
     display: flex;
-    width: 656px;
+    width: 100%;
+    object-fit: cover;
     height: 300px;
     border-radius: 12px;
     margin-left: auto;
