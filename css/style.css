@@ -1,0 +1,243 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5F564D;
+    line-height: 150%;
+    background-color: rgba(243, 229, 215, 1);
+    padding: 124px;
+}
+
+.container {
+    width: 100%;
+    max-width: 716px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-container {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.top-image {
+    display: flex;
+    width: 656px;
+    height: 300px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.site-title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.site-title h1 {
+    font-family: "Young Serif", serif;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #312E2C;
+}
+
+.pereparation {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    gap: 16px;
+    background-color: #FFF7FB;
+    margin-bottom: 32px;
+}
+
+.pereparation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pereparation li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 8px;
+
+    &::before {
+        display: flex;
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: #7A284E;
+        gap: 8px;
+        border-radius: 50%;
+    }
+}
+
+.pereparation-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pereparation h2 {
+    font-family: "Young Serif";
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background: #854632;
+}
+
+.ingredents {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+.ingredents h2 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #854632;
+}
+
+.ingredents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ingredents-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &::before {
+        display: flex;
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: #7A284E;
+        gap: 8px;
+        border-radius: 50%;
+    }
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.instructions h2 {
+    font-family: "Young Serif";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #854632;
+}
+
+.instructions-list {
+    counter-reset: item;
+}
+
+.instructions-list li {
+    counter-increment: item;
+
+    &::before {
+        content: counter(item) ".";
+        font-family: "Outfit";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #854632;
+        margin-right: 16px;
+    }
+}
+
+.line {
+    background-color: #E3DDD7;
+    margin-bottom: 32px;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.nutrition h2 {
+    font-family: "Young Serif";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #854632;
+}
+
+.nutrition table {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nutrition table tbody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.nutrition table tr {
+    display: flex;
+    gap: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-bottom: 1px solid #E3DDD7;
+}
+
+.nutrition table tr td {
+    width: 288px;
+}
+
+.nutrition table tr td:last-child {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #854632;
+}
