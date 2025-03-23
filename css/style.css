@@ -211,30 +211,31 @@ body {
     align-items: center;
     gap: 12px;
     width: 100%;
+    max-width: 656px;
     overflow: hidden;
 }
 
 .nutrition table tbody {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 12px;
     width: 100%;
 }
 
-.nutrition table tr {
+.nutrition table tbody tr {
     display: flex;
+    align-items: center;
+    width: 100%;
     gap: 16px;
     padding-right: 32px;
     padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #E3DDD7;
 }
 
-.nutrition table tr td {
+.nutrition table tbody tr td {
     width: 288px;
 }
 
-.nutrition table tr td:last-child {
+.nutrition table tbody tr td:last-child {
     font-family: "Outfit", sans-serif;
     font-weight: 700;
     font-size: 16px;
